@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 ./gradlew clean build --refresh-dependencies || exit 1
 
@@ -7,4 +7,4 @@ VERSION=$(./gradlew :printVersion --console plain | grep -A1 ":printVersion" | g
 
 echo "Building docker image for version $VERSION."
 
-docker build --build-arg VERSION="$VERSION" --pull --rm --tag "netty-ws-leak:$VERSION" . || exit 1
+docker build --build-arg VERSION="$VERSION" --pull --rm --tag "netty-ws-leak:latest" . || exit 1
