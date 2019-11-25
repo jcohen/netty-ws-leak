@@ -1,0 +1,15 @@
+{
+  "name": "netty-ws-leak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.2.0",
+    "yargs": "^15.0.2"
+  }
+}

@@ -8,3 +8,4 @@ build
 .idea
 logs/
 out/
+node_modules/
