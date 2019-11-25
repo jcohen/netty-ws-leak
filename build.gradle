@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+    id 'com.palantir.git-version' version '0.12.2'
+    id 'com.github.sherter.google-java-format' version '0.8'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+version = "0.1.0-${gitVersion()}"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+    implementation "com.google.inject:guice:4.2.2"
+    implementation "io.micrometer:micrometer-core:latest.release"
+    implementation "io.netty:netty-all:4.1.43.Final"
+}
+
+application {
+    mainClassName = 'com.heyjoshua.netty.App'
+}
+
+shadowJar {
+    zip64 = true
+}
