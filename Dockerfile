@@ -21,8 +21,8 @@ CMD [                                           \
   "-XX:GCLogFileSize=1048576",                  \
   "-XX:+HeapDumpOnOutOfMemoryError",            \
   "-XX:HeapDumpPath=/app/logs/java_heap.hprof", \
-  "-XX:InitialHeapSize=2g",                     \
-  "-XX:MaxHeapSize=2g",                         \
+  "-XX:InitialHeapSize=1536m",                  \
+  "-XX:MaxHeapSize=1536m",                      \
   "-XX:MaxMetaspaceSize=268435456",             \
   "-XX:NewRatio=2",                             \
   "-XX:NumberOfGCLogFiles=1",                   \
